@@ -47,12 +47,14 @@ void countingSort(const int* numbers, int size) {
         numbers2[numbers[i]-1]++;
     }
 
+
     for (int i=0; i<max; i++){
         while(numbers2[i]!=0){
-            cout << numbers[i] << " ";
+            cout << i+1 << " ";
             numbers2[i]--;
         }
     }
+
 
 
 }
